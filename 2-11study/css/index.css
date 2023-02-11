@@ -1,0 +1,60 @@
+/* 默认清除 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 加入内减模式 */
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f3f5f7;
+}
+/* 清除列表符号 */
+li {
+    list-style: none;
+}
+/* 清除下划线 */
+a {
+    text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+}
+.clearfix:after {
+    clear:both;
+}
+
+/* 版心效果 */
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+}
+
+.header{
+    
+    height: 42px;
+    background-color: pink;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    /* 等价于 */
+    margin: 30px auto;
+}
+h1{
+    float: left;
+}
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+    background-color: green;
+
+}
+
+.nav ul li{
+    float: left;
+    padding: 20px;
+    
+}
