@@ -36,7 +36,7 @@ a {
 .header{
     
     height: 42px;
-    background-color: pink;
+    
     /* margin-top: 30px;
     margin-bottom: 30px; */
     /* 等价于 */
@@ -49,12 +49,298 @@ h1{
     float: left;
     margin-left: 70px;
     height: 42px;
-    background-color: green;
-
+   
 }
 
 .nav ul li{
     float: left;
-    padding: 20px;
+    margin-right: 26px;  
+}
+
+.nav a{
+    padding:0 9px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search{
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+
+.search input{
+    float: left;
+    padding-left: 20px;    
+    width: 360px;
+    /* 左右加的有边界的像素 */
+    height: 38px;
+    /* 算好内边距  减去边界的像素 */
+    border: 0;
+   
+}
+
+/* 控制placeholder */
+.search input::placeholder{
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button{
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-image: url(../image/btn.png);
+    border: 0;
+}
+
+.user{
+    float: right;
+    height: 42px;
+    margin-right: 35px;
+    line-height: 42px;
+}
+
+.user img {
+    vertical-align: middle;
+    /* 控制图片的位置 */
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../image/banner2.png);
+}
+
+.banner .left{
+    float: left;
+   
+    padding: 0 20px;
+    height: 420px;
+    width: 190px;
+    background-color:rgba(0,0,0,0.3);
+    /* 透明度设置 */
+
+    /* 控制文字的 可以继承 */
+    line-height: 44px;
     
+}
+
+.banner span{
+    float: right;
+}
+
+.banner li a{
+    font-size: 14px;
+    color: #fff ;
+}
+
+.banner li a:hover{
+    color: #00a4ff;
+}
+
+.banner .right{
+    margin-top: 50px;
+    float: right;
+    width: 228px;
+    height: 302px;
+    background-color: #fff;
+}
+
+.banner .right h2{
+    height: 48px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+}
+
+.banner .content{
+    padding: 12px;
+}
+
+.banner .content dl{
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.banner .content dt{
+    font-size: 16px;
+    color: #4e4e4e;
+    font-weight: bold;
+}
+
+.banner .content dd{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.banner .right .more{
+    margin: 0 14px;
+    display: block;
+    height: 40px;
+    width: 200px;
+    border:1px solid #00a4ff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.banner .right .more a{
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.goods{
+    margin-top: 8px;
+    padding-left: 34px;
+    padding-right: 26px;
+    height: 60px;
+    background-color: #fff;
+    /* 标签阴影设置 */
+    box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+    line-height: 60px;
+}
+
+.goods h2{
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: normal;
+}
+
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+
+.goods li{
+    float: left;
+   
+}
+.goods  ul a{
+    border-left: 1px solid #bfbfbf;
+    padding: 0 35px;
+    color: #050505;
+}
+.goods  .change{
+    float: right;
+    color: #00a4ff;
+}
+
+.course{
+    margin-top: 35px;
+    
+}
+
+.course .title{  
+    height: 40px;
+}
+
+.course .title h2{
+    float: left;
+    font-size: 20px;
+    color:#494949;
+    font-weight: normal;
+}
+
+.course .title a{
+    margin-right: 30px;
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.con ul li{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+    width: 228px;
+    height: 270px;
+    
+}
+
+.course .con ul li:nth-child(5n){
+    margin-right: 0;
+}
+
+.course .con li h3{
+    padding: 20px;
+    font-weight: normal;
+}
+.course .con li p{
+   margin-left: 20px;
+   max-block-size: 15px;
+   font-size: 12px;
+   color: #606060;
+}
+.course .con li span{
+    color: #ff7c2d;
+}
+
+.new{
+    height: 417px;
+    background-color: #fff;
+}
+.new .app img{
+    
+    margin-top: 30px;
+   
+}
+
+.new .app{
+    float: left;
+    width: 428px;
+}
+.new .info{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.new .app a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    color: #00a4ff;
+}
+
+.new .me{
+    margin-left: 210px;
+    float: left;
+    width: 90px;
+    height: 150px;
+  
+}
+
+.new .me h3{
+    float: left;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.new .me ul{
+    margin-top: 30px;
+    font-size: 12px;
+}
+.new .me ul li{
+    margin-top: 8px;
 }
