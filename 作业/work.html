@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件列表</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .wrapper{
+            margin: 0 auto;
+            width: 720px;
+        }
+
+        .index{
+            height: 50px;
+            width: 720px;
+            line-height: 50px;;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+        }
+
+        .index nav a{
+            font-size: 20px;
+            margin-left: 26px;
+            color: burlywood;
+            text-decoration: none;
+        }
+
+        .content dt{
+            
+            text-align: center;
+        
+        }
+        .content dd{
+            margin-left: 13px;
+        }
+        .content dd{
+            font-size: 16px;
+        }
+        .content .red{
+            color: red;
+            font-weight: 600;
+        }
+        .content .zong{
+            color: burlywood;
+        }
+        .content .hz{
+            color: #5e2d00;
+            font-weight: 600;
+        }
+
+        article{
+            display: none;
+        }
+
+        :target{
+			display: block;
+		}
+    </style>
+</head>
+<body>
+    <h2>网页设计软件列表（点击查看）</h2>
+    <div class="index wrapper">
+        <nav>
+            <a href="#ps">Photoshop软件</a>
+            <a href="#il">illustator软件</a>
+            <a href="#dw">Dreamweave软件</a>
+            <a href="#fire">Firework软件</a>
+            
+        </nav>
+    </div>
+
+    <div class="content wrapper">
+        <article id="ps">
+            <dl>
+                <dt><img src="images/1.jpg" alt=""></dt>
+                <dd>Photoshop是一款好到违反广告法的<span class="red">超S设计软件</span>！给画面来点动感吧。</dd>
+                <dd class="zong">Photoshop处理以<span class="hz">像素构成的图形</span>，可以有效的编辑调整工作</dd>
+                <dd>Photoshop有很多功能，在图形，图形文字出版等方面都有涉及</dd>                
+                <dd class="zong">在制作建筑效果包括许三维场景时，常常需要在Photoshop进行调整</dd>                
+
+            </dl>
+        </article>
+        
+
+        <article id="il">
+            <dl>
+                <dt><img src="images/2.jpg" alt=""></dt>
+                <dd>Illustrator是一种应用于出版、多媒体和在线图像的<span class="red">标准矢量插画</span>的软件。</dd>
+                <dd class="zong">Illustrator广泛应用于<span class="hz
+                    ">印刷出版、海报书籍</span>、专业插画、多媒体图像处理</dd>
+                <dd>Illustrator可以为线稿提供较高的精度和控制，简单到复杂项目都能生产。</dd>                
+                <dd class="zong">跟据不完全统计全球大约有37%的界面设计师在使用Illustrator进行设计。</dd>                
+
+            </dl>
+        </article>
+        
+        <article id="dw">
+            <dl>
+                <dt><img src="images/3.jpg" alt=""></dt>
+                <dd>Dreamweaver是第一套针对<span>专业网页设计师</span>特别发展的网页开发工具。</dd>
+                <dd class="zong">利用它可以轻易地制作出<span class="hz">跨越平台和跨越浏览器</span>限制的充满动感的网页。</dd>
+                <dd>Dreamweaver自MX版本开始，使用了Opera的排版引擎作为网页预览。</dd>                
+                <dd class="zong">Dreamweaver可以在AdobeCreativeSuite4的不同组件之间切换工作。</dd>                
+
+            </dl>
+        </article>
+       
+        <article id="fire">
+            <dl>
+                <dt><img src="images/4.jpg" alt=""></dt>
+                <dd>Fireworks是Adobe推出的一款<span class="red">网页作图软件</span>，可以加速Web设计开发。</dd>
+                <dd class="zong">Fireworks是一款创建优化<span>Web图像</span>和快速构建网站与Web界面的工具。</dd>
+                <dd>Fireworks可以创建和编辑矢量图像与位图图像，并导入PS和AI文件中。</dd>                
+                <dd class="zong">Fireworks采用与PS类似的层图层结构来管理原型，更易组织Web页面。</dd>                
+
+            </dl>
+        </article>
+
+    </div>
+</body>
+</html>
