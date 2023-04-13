@@ -1,0 +1,450 @@
+/* 默认清除 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 加入内减模式 */
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f3f5f7;
+}
+/* 清除列表符号 */
+li {
+    list-style: none;
+}
+/* 清除下划线 */
+a {
+    text-decoration: none;
+    color:#f3f5f7 ;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+}
+.clearfix:after {
+    clear:both;
+}
+
+/* 版心效果 */
+.wrapper{
+    width: 960px;
+    margin:0 auto;
+    /* background-color: pink; */
+}
+.box{
+    height: 763px;
+}
+.box .top{
+    height: 60px;
+}
+.box .top .logo{
+    float: left;
+    margin-left: 10px;
+    width: 50px;
+    height: 50pxc;
+}
+.top .txt{
+    margin-top: -4px;
+    margin-left: 14px;
+    float: left;
+    font-size: 24px;
+    font-weight:500;
+    text-align: center;
+}
+
+
+.txt .dit{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.top .search{
+    float: left;
+    margin-left: 70px;
+    height: 30px;
+    width: 492px;
+    line-height: 30px;
+}
+.top .search span{
+    display: inline-block;
+    height: 30px;
+    font-size: 16px;
+    vertical-align: bottom;
+    background-color: #eee;
+}
+.top .search span select{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(238, 238, 238);
+    vertical-align: bottom;
+}
+.search input{
+    margin-left: -6px;
+    width: 316px;
+    height: 30px;
+    vertical-align: bottom;
+}
+.search button{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    vertical-align: bottom;
+    background-color: red;
+    color: #f3f5f7;
+}
+.search span{
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.top .phone{
+    margin-left: 50px;
+    float: left;
+    width: 166px;
+    height: 30px;
+}
+.phone img{
+    float: left;
+}
+.phone .t{
+    float: left;
+}
+
+.nav{
+    margin-top: -12px;
+    height: 50px;
+}
+
+.nav ul{
+    margin-left: 20px;
+}
+.nav ul li{
+    float: left;
+    display: inline-block;
+    height: 44px;
+    background-color: rgb(255, 29, 23);
+}
+.nav a{
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 44px;
+}
+.nav ul li a:hover{
+    background-color: rgb(238, 238, 238);
+    color:rgb(255, 29, 23);
+}
+
+.box .bg{
+    margin: 0;
+    height: 360px;
+    background-image: url(../images/banner1.jpg);
+    
+}
+
+.calc{
+    position: absolute;    
+    height: 300px;
+    overflow: hidden;
+}
+ 
+.calc .cl{
+    position: relative;
+    top: 36px;
+    left: 104px;
+    width: 761px;
+    height: 238px;
+    background-color: rgb(238, 238, 238);
+}
+
+.cl{
+    float: left;
+    overflow: hidden;
+}
+.cl ul{
+    
+    float: left;
+    margin-left: 10px;
+    
+}
+.cl h2{
+    margin-left:290px;
+    margin-top: 20px;
+}
+.cl ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cl .right{
+    float: right;
+    margin-right: 10px;
+
+}
+.cl .right li{
+    width: 200px;
+    height: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(239, 255, 210);
+    border: 2px solid #000;
+    border-radius: 8%;
+}
+.cl .right li span{
+    float: right;
+    margin-right: 10px;
+}
+.cl .right .mr{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.cl .img1{
+    margin-left: 128px;
+    margin-top: 42px;
+    float: left;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/calbutton.png);
+    text-align: center;
+    line-height: 90px;
+}
+
+.cl .img1 li{
+    margin: 0;
+    margin-left: 18px;
+    margin-top: -4px;
+    /* width: 20px; */
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #eee;
+}
+
+.ov{
+    width: 960px;
+}
+
+.calc{
+    height: 300px;
+}
+
+.calc a{
+    color: red;
+}
+.change{
+    height: 220px;
+    background-color: rgb(238, 238, 238);
+}
+
+.change h1{
+    text-align: center;
+}
+
+.change ul li{
+    float: left;
+    margin-top: 6px;
+    margin-left: 18px;
+}
+.change ul li p{
+   text-align: center;
+
+}
+
+.exm{
+    height: 360px;
+    
+    vertical-align: bottom;
+}
+.exm .t1{
+    display: block;
+    margin-left: 10px;
+    width: 36px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.exm a{
+    color: red;
+}
+.exm .li{
+    margin-top: 134px;
+}
+.exm .li i{
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.exm li{
+    float:left;
+    margin-left: 40px;
+    margin-top: 68px;
+}
+.exm .bg1{
+    padding: 10px;
+    height: 290px;
+    width: 240px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+.exm .bg1 .w1{
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+}
+.exm .bg1 .p1{
+    font-size: 12px;
+    color: rgb(213, 213, 213);
+}
+
+/*  <!--  环保材料-->*/
+.evmlerment{
+    height: 585px;
+    background-color: rgb(238, 238, 238);
+}
+
+.evmlerment .ebg{
+    margin:0 auto;
+    margin-bottom: 10px;
+    width: 760px;
+    height: 166px;
+    background-color: #fff;
+   
+}
+.evmlerment ul li{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* <!-- 软装效果 --> */
+
+.rbg{
+    font-size: 32px;
+    font-weight: 600;
+    height: 414px;
+}
+.rbg span{
+    margin-top: 60px;
+    margin-left: 32px;
+    margin-right: 10px;
+    float: left;
+    width: 50px;
+}
+.rbg p{
+   
+    color: red;
+   font-size: 12px;
+}
+.rbg span p{
+    display: block;
+    width: 50px;
+    margin-left: 30px;
+}
+.rbg ul{
+    margin-top: 16px;
+}
+.rbg ul li img{
+    width: 215px;
+    height: 165px;
+}
+.rbg .u1{
+    margin-left: 26px;
+    float: left;
+    display: inline-block;
+    width: 215px;
+   
+}
+.rbg ul li{
+   
+    text-align: center;
+    
+}
+.rbg a{
+    color: red;
+}
+.rbg .u2 img{
+    width: 500px;
+    height: 333px;
+}
+.rbg .u2{
+    margin-top: 16px;
+    margin-right: 98px;
+    float: right;
+    display: block;
+    width: 500px;
+}
+
+.rbg ul li p{
+    color: #000;
+}
+
+
+/* 热装小区 */
+
+.xiaoqu{
+    height: 266px;
+}
+
+.xiaoqu img{
+    width: 188px;
+    height: 134px;
+}
+
+/* .xiaoqu ul{
+    margin-left: 10px;
+} */
+.xiaoqu ul:first-child{
+    margin-left: 6px;
+}
+.xiaoqu li{
+    margin-right: 30px;
+    float: left;
+    text-align: center;
+}
+
+.xiaoqu .txt span{
+    display: block;
+    width: 50px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.xiaoqu .txt  a{
+    font-size: 12px;
+    color: red;
+}
+
+
+
+
+
+/* 页脚设计 */
+.foot{
+    height: 290px;
+    background-color: rgb(51, 51, 51);
+}
+
+.foot p{
+   
+    text-align: center;
+}
+
+.foot ul{
+    margin-left: 360px;
+}
+.foot li{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+.foot .p2{
+    margin-top: 64px;
+}
+.foot .p3{
+    margin-top: 18px;
+}
