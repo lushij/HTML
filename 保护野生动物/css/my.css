@@ -1,0 +1,593 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 1518px;
+}
+
+nav{
+    height: 100px;
+    background-color: #000;
+    line-height: 100px;
+}
+.logo{
+    float: left;
+    margin-left: 200px;
+    height: 100px;
+}
+
+/* 菜单 */
+.menu{
+    float: left;
+    /* background-color: blue; */
+    margin-left: 500px;
+    
+}
+nav span {
+  float: left;
+  display: block;
+  height: 100px;
+  margin-left: 50px;
+}
+.logo{
+  position: relative;
+}
+.logo img{
+  margin-top: -7px;
+}
+.logo span{
+  position: absolute;
+  left: -43px;
+  top: 40px;
+  color: #fff;
+}
+
+nav span a{
+  color: #fff;
+  line-height: 100px;
+}
+.menu  a{
+    color: #fff;
+    line-height: 100px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 20px;
+    /* cursor: pointer; */
+    position: relative; 
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 96px;
+    right: -9px;
+    width: 79px;
+    text-align: center;
+  }
+  
+  .submenu-item {
+    padding: 10px;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+    background-color:rgba(0,0,0,.5);
+    z-index :1;
+  }
+  .menu-item:hover li{
+    margin-left: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+ 
+  /* 轮播图 */
+
+
+  .slideshow-container {
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
+
+  .bk{
+    height: 500px;
+    /* background-color: blue; */
+  }
+  .bk img{
+    height: 500px;
+    width: 1518px;
+  }
+
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 28px;
+  }
+
+
+
+
+  /* <!-- 野生动物展示--> */
+.animal{
+  text-align: center;
+  /* background-color: blue; */
+  overflow: hidden;
+}
+.animal h2{
+  margin: 10px auto;
+}
+
+.show{
+  margin-left: 210px;
+}
+
+.show ul li img{
+  width: 200px;
+  height: 200px;
+}
+.show ul li{
+  float: left;
+  margin-right:20px ;
+}
+.show a{
+  color: #fff;
+}
+
+/* 渐变盒子 */
+
+.BOX li {
+  position: relative;
+  overflow: hidden;
+}
+
+.BOX .txt {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 200px;
+  height: 140px;
+  z-index: 1;
+  /* z-index属性，您可以显式地更改元素的堆叠顺序。 */
+  color: #fff;
+  transition: transform .5s;
+}
+
+.BOX .s1{
+  font-size: 12px;
+}
+
+.BOX .txt h5 {
+  text-align: left;
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+.BOX .txt p {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+}
+.BOX .txt .pp1{
+  margin-top: 50px;
+}
+
+/* 1. 渐变背景的盒子 */
+.BOX .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(
+      transparent,
+      rgba(153, 67, 0,1)
+  );
+  opacity: 0;
+  transition: all .5s;
+}
+/* 2. hover效果 */
+/* 2.1 图片缩放 */
+.BOX li .pic img {
+  transition: all .5s;
+}
+.BOX li:hover .pic img {
+  transform: scale(1.2);
+  /* 缩放 */
+}
+
+
+/* 2.2 渐变背景显示 */
+.BOX li:hover .mask {
+  opacity: 1;
+}
+
+/* 2.3 文字向上移动 */
+.BOX li:hover .txt {
+  transform: translateY(-250px);
+}
+
+
+.more{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(92, 184, 92);
+  position: absolute;
+  left: 43%;
+  top: 145%;
+
+}
+.more a{
+  color: #fff;
+  line-height: 50px;
+  font-size: 16px;
+}
+.more:hover{
+  background-color: rgb(68, 157, 68);
+}
+
+/*保护意义  */
+
+.pro{
+  margin-top: 100px;
+  /* background-color: blue; */
+ overflow: hidden;
+}
+.pro h1{
+  margin-left: 200px;
+  text-align: left;
+}
+.pro p{
+  float: left;
+  margin-left: 205px;
+  width: 500px;
+  font-size: 18px;
+}
+.pro p span{
+  margin-left: 32px;
+}
+.pro video{
+  float: left;
+  width: 500px;
+}
+
+/* 野生保护区 */
+
+.wild{
+  background-color: blue;
+  text-align: center;
+  overflow: hidden;
+}
+.wild ul{
+  margin: 0 auto;
+  width: 1000px;
+}
+.wild li{
+  float: left;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+
+.wild{
+  height: 600px;
+  background-image: url(../images/Image1.jpg);
+  overflow: hidden;
+}
+
+.wild .viedw {
+  margin-left: 237px;
+  text-align: left;
+}
+
+.wild video{
+  float: left;
+}
+.wild ul{
+  overflow: hidden;
+}
+
+.wild .infot{
+  float: left;
+  margin-left: 897px;
+  margin-top: -316px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+@keyframes move{
+  0%{
+    transform: translateY(0px);
+    
+  }
+  50%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(-400px);
+  }
+}
+
+.wild .info{
+  animation: 10s move linear 1s infinite normal;
+  text-align: center;
+  will-change: transform;
+}
+.wild ul{
+  margin-left: 200px;
+}
+
+/* 众筹项目 */
+
+.money{
+  position: relative;
+  margin: 0 auto;
+  width: 1050px;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+}
+.money .left{
+  float: left;
+  width: 350px;
+}
+.money  .left span{
+  display: inline-block;
+  width: 81px;
+  height: 52px;
+  line-height: 47px;
+  text-align: center;
+  border: solid 1px rgb(118, 118, 118);
+}
+.money .left input{
+  width: 220px;
+  height: 50px;
+
+}
+.money .left button{
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.money .mid{
+  margin: 0 auto;
+  float: left;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.money .mid .c{
+  position: relative;
+  margin: 0 auto;
+  width: 261px;
+  height:261px;
+  border-radius: 100%;
+  background-color: pink;
+}
+.mid .my{
+  position: absolute;
+  left: -64px;
+  top: 67px;
+  width: 260px;
+  height:130px;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
+  background-color: red;
+  transform: rotate(269deg);
+}
+.mid .c .my span{
+  margin-top: 46px;
+  display: block;
+  transform: rotate(-269deg);
+}
+
+
+
+
+
+
+
+
+
+.money .right{
+  margin-right: 0;
+  float: left;
+  width: 220px;
+  height: 200px;
+  /* background-color: blue; */
+}
+
+.money .right .infot{
+  float: left;
+  margin-left: -50px;
+  margin-top: 20px;
+  width: 300px;
+  height: 239px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+@keyframes move{
+  0%{
+    transform: translateY(0px);
+    
+  }
+  50%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(-400px);
+  }
+}
+
+.money .right .info{
+  animation: 10s move linear 1s infinite normal;
+  text-align: center;
+  will-change: transform;
+}
+
+
+
+.bot{
+  position: absolute;
+  left: 42%;
+  top: 86%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: skyblue;
+}
+.bot:hover
+{
+background-color: rgb(92, 184, 92);
+}
+
+/* 最新消息 */
+
+.news{
+    height: 390px;
+    /* text-align: center; */
+    font-size: 14px;
+}
+.news h1{
+  text-align: center;
+}
+.news li img{
+  width: 290px;
+  height: 200px;
+}
+.news ul{
+  margin: 0 auto;
+  width: 1000px;
+}
+.news li{
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.news hr{
+  margin-top: 10px;
+}
+.news p{
+  margin-top: 10px;
+}
+.news .p1{
+  font-size: 12px;
+  color: rgb(178, 178, 178);
+}
+
+
+/* 一键按钮 */
+
+.body{
+  position: relative;
+}
+.but {
+  position: absolute;
+  left: 97%;
+  width: 60px;
+  height: 50px;
+  transform: rotate(90deg);
+}
+
+
+
+/* foot */
+.foot{
+  height: 600px;
+  background-color: #000;
+}
+.focus{
+  text-align: center;
+  height: 300px;
+  background-color: #fff;
+}
+.focus h1{
+  text-align: center;
+  color: rgb(225, 112, 0);
+}
+
+.foot h3{
+  color: aliceblue;
+}
+.foot ul li{
+  float: left;
+  margin: 10px;
+  padding: 10px;
+}
+.foot a{
+  color: aliceblue;
+}
