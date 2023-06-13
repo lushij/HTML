@@ -7,6 +7,12 @@
 body{
 	width: 1519px;
 }
+/* .box{
+  width: 1486px;
+}
+.bk{
+  margin-left: -15px;
+} */
 a{
 	color: aliceblue;
 }
@@ -36,11 +42,11 @@ a{
 .logo img{
 	float: left;
 	padding: 20px;
-	margin-left: 50px;
+	margin-left: 30px;
 }
 .logo ul{
 	float: left;
-	margin-left: 200px;
+	margin-left: 156px;
 }
 .logo ul li{
 	float: left;
@@ -90,7 +96,7 @@ a{
 
 .search {
 	float: left;
-	margin-left: 260px;;
+	margin-left: 230px;;
 	width: 75px;
 	height: 101px;
 	line-height: 101px;;
@@ -210,7 +216,90 @@ a{
 
 }
 
+
+
+/* 新闻与活动 */
+.act{
+  margin: 0 auto;
+  width: 1236px;
+  height: 500px;
+}
+.act h1{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.act hr{
+  margin-top: -49px;
+  margin-left: 595px;
+  width: 50px;
+  height: 1px;
+  background-color: red;
+}
+.act img{
+  
+  width: 326px;
+  height: 260px;
+}
+
+.act p{
+  /* margin-top: 20px; */
+  padding: 10px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: 600;
+}
+.act .div1{
+  margin-top: 0;
+  width: 326px;
+  height: 200px;
+  background-color:rgb(248, 248, 248);
+}
+.act .div1:hover{
+  width: 330px;
+  height: 200px;
+  margin-left: -10px;
+}
+
+.act li{
+  float: left;
+  padding: 10px;
+  margin-left: 30px;
+  width: 326px;
+}
+
+
+.act  li a  img {
+  transition: all .5s;
+}
+.act  li:hover a  img {
+  transform: scale(1.1);
+}
+
+.act ul li ul li a{
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+}
+.act ul li ul li{
+  padding: 30px;
+  margin-left: -20px;
+}
+.act ul li ul{
+  width: 336px;
+  height: 500px;
+  background-color:rgb(248, 248, 248);
+}
+
+.act ul li ul li:hover a{
+  color: red;
+}
+
+
+
+
 .foot{
+  position: relative;
 	height: 656px;
 	background-color: rgb(242, 242, 242);
 }
@@ -241,10 +330,19 @@ a{
 .foot .bot{
 	float: left;
 }
+.foot .bot  ul{
+  overflow: hidden;
+}
+.foot .bot  hr{
+  width: 1000px;
+  margin: 26px auto;
+  margin-left: 239px;
+}
 .foot .bot  ul li{
 	margin-right:10px ;
-	margin-left: 100px;
+	margin-left: 126px;
 	height: 30px;
+
 }
 .foot .bot  ul li:first-child{
 	margin-left: 256px;
@@ -256,6 +354,48 @@ a{
 	margin-left: 256px;
 }
 .foot span{
+  display: inline-block;
+  width: 112px;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
 	font-size: 12px;
-	margin-right: 128px;
+	margin-right: 76px;
+  margin-left: 10px;
+}
+
+.f1{
+  position: absolute;
+  top: 72%;
+  left: 16%;
+  font-size: 14px;
+  /* width: 1000px;
+  margin: 0 auto; */
+  height: 60px;
+}
+.f1 dt{
+  overflow: hidden;
+}
+.f1 dl{
+
+  float: left;
+  margin-right: 20px;
+  margin-left: 0;
+}
+.f1 li a{
+  color: rgb(124, 88, 122);
+}
+
+
+.fc{
+  margin-top: 557px;
+  height: 60px;
+  background-color:rgb(230, 230, 230);
+  text-align: center;
+  line-height: 60px;
+}
+.fc p{
+  margin-left: 2px;
+  color: rgb(124, 88, 122);
+  font-size: 14px;
 }
