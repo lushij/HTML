@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #dd8787;
+}
+.box{
+    width: 980px;
+    margin: 0 auto;
+}
+.top img{
+    text-align: center;
+}
+.box .content{
+    margin:0 auto;
+    padding:75px ;
+    width: 830px;
+    height: 934px;
+    background-image: url(../images/content_bg.jpg);
+}
+
+.content h2{
+    width: 454px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #dd8787;
+    line-height: 80px;
+    vertical-align:bottom;
+    /* background-image: url(../images/step.jpg); */
+}
+.content h3{
+    width: 310px;
+    height: 30px;
+    border-bottom: solid 2px #dd8787;
+}
+.box li{
+    width: 500px;
+    height: 60px;
+    line-height: 60px;
+}
+.box li input{
+    width: 260px;
+    height: 21px;
+}
+.box #l1{
+    width: auto;
+    height: auto;
+}
+/* .box .u1:first-child{
+    margin-top: 10px;
+} */
+
+.s{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.fl{
+    margin-top: 60px;
+    /* margin-left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 583px;
+    height: 200px;
+    line-height: 200px;
+}
+.fl i{
+    display: block;
+    width: 110px;
+    height: auto;
+}
+textarea{
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+}
